@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function checkForSpam(message) {
     return message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale');
 }
@@ -10,3 +11,16 @@ console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
+=======
+function getElementWidth(content, padding, border) {
+    content = Number.parseFloat(content); 
+    padding = Number.parseFloat(padding);
+    border = Number.parseFloat(border);
+    const totalWidth = content + 2 * padding + 2 * border;  
+    return totalWidth;
+};
+
+console.log(getElementWidth("50px", "8px", "4px")); // 74
+console.log(getElementWidth("60px", "12px", "8.5px")); // 101
+console.log(getElementWidth("200px", "0px", "0px")); // 200
+>>>>>>> e2e97c0605f4fb3c071f50c3268711d9aee06d50
